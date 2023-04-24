@@ -1,0 +1,416 @@
+[[package]]
+name = "asgiref"
+version = "3.5.1"
+description = "ASGI specs, helper code, and adapters"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
+
+[[package]]
+name = "cachetools"
+version = "5.3.0"
+description = "Extensible memoizing collections and decorators"
+category = "main"
+optional = false
+python-versions = "~=3.7"
+
+[[package]]
+name = "certifi"
+version = "2022.12.7"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "charset-normalizer"
+version = "3.1.0"
+description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+category = "main"
+optional = false
+python-versions = ">=3.7.0"
+
+[[package]]
+name = "django"
+version = "3.2.13"
+description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+asgiref = ">=3.3.2,<4"
+pytz = "*"
+sqlparse = ">=0.2.2"
+
+[package.extras]
+argon2 = ["argon2-cffi (>=19.1.0)"]
+bcrypt = ["bcrypt"]
+
+[[package]]
+name = "djangorestframework"
+version = "3.14.0"
+description = "Web APIs for Django, made easy."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+django = ">=3.0"
+pytz = "*"
+
+[[package]]
+name = "google-api-core"
+version = "2.11.0"
+description = "Google API client core library"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+google-auth = ">=2.14.1,<3.0dev"
+googleapis-common-protos = ">=1.56.2,<2.0dev"
+protobuf = ">=3.19.5,<3.20.0 || >3.20.0,<3.20.1 || >3.20.1,<4.21.0 || >4.21.0,<4.21.1 || >4.21.1,<4.21.2 || >4.21.2,<4.21.3 || >4.21.3,<4.21.4 || >4.21.4,<4.21.5 || >4.21.5,<5.0.0dev"
+requests = ">=2.18.0,<3.0.0dev"
+
+[package.extras]
+grpc = ["grpcio (>=1.33.2,<2.0dev)", "grpcio-status (>=1.33.2,<2.0dev)", "grpcio (>=1.49.1,<2.0dev)", "grpcio-status (>=1.49.1,<2.0dev)"]
+grpcgcp = ["grpcio-gcp (>=0.2.2,<1.0dev)"]
+grpcio-gcp = ["grpcio-gcp (>=0.2.2,<1.0dev)"]
+
+[[package]]
+name = "google-api-python-client"
+version = "2.86.0"
+description = "Google API Client Library for Python"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+google-api-core = ">=1.31.5,<2.0.0 || >2.3.0,<3.0.0dev"
+google-auth = ">=1.19.0,<3.0.0dev"
+google-auth-httplib2 = ">=0.1.0"
+httplib2 = ">=0.15.0,<1dev"
+uritemplate = ">=3.0.1,<5"
+
+[[package]]
+name = "google-auth"
+version = "2.17.3"
+description = "Google Authentication Library"
+category = "main"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*"
+
+[package.dependencies]
+cachetools = ">=2.0.0,<6.0"
+pyasn1-modules = ">=0.2.1"
+rsa = {version = ">=3.1.4,<5", markers = "python_version >= \"3.6\""}
+six = ">=1.9.0"
+
+[package.extras]
+aiohttp = ["requests (>=2.20.0,<3.0.0dev)", "aiohttp (>=3.6.2,<4.0.0dev)"]
+enterprise_cert = ["cryptography (==36.0.2)", "pyopenssl (==22.0.0)"]
+pyopenssl = ["pyopenssl (>=20.0.0)", "cryptography (>=38.0.3)"]
+reauth = ["pyu2f (>=0.1.5)"]
+requests = ["requests (>=2.20.0,<3.0.0dev)"]
+
+[[package]]
+name = "google-auth-httplib2"
+version = "0.1.0"
+description = "Google Authentication Library: httplib2 transport"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+google-auth = "*"
+httplib2 = ">=0.15.0"
+six = "*"
+
+[[package]]
+name = "google-auth-oauthlib"
+version = "1.0.0"
+description = "Google Authentication Library"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+google-auth = ">=2.15.0"
+requests-oauthlib = ">=0.7.0"
+
+[package.extras]
+tool = ["click (>=6.0.0)"]
+
+[[package]]
+name = "googleapis-common-protos"
+version = "1.58.0"
+description = "Common protobufs used in Google APIs"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+protobuf = ">=3.19.5,<3.20.0 || >3.20.0,<3.20.1 || >3.20.1,<4.21.1 || >4.21.1,<4.21.2 || >4.21.2,<4.21.3 || >4.21.3,<4.21.4 || >4.21.4,<4.21.5 || >4.21.5,<5.0.0dev"
+
+[package.extras]
+grpc = ["grpcio (>=1.44.0,<2.0.0dev)"]
+
+[[package]]
+name = "grpcio"
+version = "1.52.0"
+description = "HTTP/2-based RPC framework"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+protobuf = ["grpcio-tools (>=1.52.0)"]
+
+[[package]]
+name = "httplib2"
+version = "0.22.0"
+description = "A comprehensive HTTP client library."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.dependencies]
+pyparsing = {version = ">=2.4.2,<3.0.0 || >3.0.0,<3.0.1 || >3.0.1,<3.0.2 || >3.0.2,<3.0.3 || >3.0.3,<4", markers = "python_version > \"3.0\""}
+
+[[package]]
+name = "idna"
+version = "3.4"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "oauthlib"
+version = "3.2.2"
+description = "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+rsa = ["cryptography (>=3.0.0)"]
+signals = ["blinker (>=1.4.0)"]
+signedtoken = ["cryptography (>=3.0.0)", "pyjwt (>=2.0.0,<3)"]
+
+[[package]]
+name = "protobuf"
+version = "4.22.3"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "pyasn1"
+version = "0.4.8"
+description = "ASN.1 types and codecs"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pyasn1-modules"
+version = "0.3.0"
+description = "A collection of ASN.1-based protocols modules"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7"
+
+[package.dependencies]
+pyasn1 = ">=0.4.6,<0.6.0"
+
+[[package]]
+name = "pyparsing"
+version = "3.0.9"
+description = "pyparsing module - Classes and methods to define and execute parsing grammars"
+category = "main"
+optional = false
+python-versions = ">=3.6.8"
+
+[package.extras]
+diagrams = ["railroad-diagrams", "jinja2"]
+
+[[package]]
+name = "pytz"
+version = "2022.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "requests"
+version = "2.28.2"
+description = "Python HTTP for Humans."
+category = "main"
+optional = false
+python-versions = ">=3.7, <4"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+charset-normalizer = ">=2,<4"
+idna = ">=2.5,<4"
+urllib3 = ">=1.21.1,<1.27"
+
+[package.extras]
+socks = ["PySocks (>=1.5.6,!=1.5.7)"]
+use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
+
+[[package]]
+name = "requests-oauthlib"
+version = "1.3.1"
+description = "OAuthlib authentication support for Requests."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.dependencies]
+oauthlib = ">=3.0.0"
+requests = ">=2.0.0"
+
+[package.extras]
+rsa = ["oauthlib[signedtoken] (>=3.0.0)"]
+
+[[package]]
+name = "rsa"
+version = "4.9"
+description = "Pure-Python RSA implementation"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4"
+
+[package.dependencies]
+pyasn1 = ">=0.1.3"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "sqlparse"
+version = "0.4.2"
+description = "A non-validating SQL parser."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "uritemplate"
+version = "4.1.1"
+description = "Implementation of RFC 6570 URI Templates"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "urllib3"
+version = "1.26.15"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+
+[package.extras]
+brotli = ["brotlicffi (>=0.8.0)", "brotli (>=1.0.9)", "brotlipy (>=0.6.0)"]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "urllib3-secure-extra", "ipaddress"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
+
+[[package]]
+name = "xds-protos"
+version = "0.0.11"
+description = "Generated Python code from envoyproxy/data-plane-api"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+grpcio = "*"
+protobuf = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "61ad63a3eaf8a24ca8054cd970f08ce690d9fa3294f3e52c9f2170a4d9d59239"
+
+[metadata.files]
+asgiref = []
+cachetools = []
+certifi = []
+charset-normalizer = []
+django = []
+djangorestframework = []
+google-api-core = []
+google-api-python-client = []
+google-auth = []
+google-auth-httplib2 = [
+    {file = "google-auth-httplib2-0.1.0.tar.gz", hash = "sha256:a07c39fd632becacd3f07718dfd6021bf396978f03ad3ce4321d060015cc30ac"},
+    {file = "google_auth_httplib2-0.1.0-py2.py3-none-any.whl", hash = "sha256:31e49c36c6b5643b57e82617cb3e021e3e1d2df9da63af67252c02fa9c1f4a10"},
+]
+google-auth-oauthlib = [
+    {file = "google-auth-oauthlib-1.0.0.tar.gz", hash = "sha256:e375064964820b47221a7e1b7ee1fd77051b6323c3f9e3e19785f78ab67ecfc5"},
+    {file = "google_auth_oauthlib-1.0.0-py2.py3-none-any.whl", hash = "sha256:95880ca704928c300f48194d1770cf5b1462835b6e49db61445a520f793fd5fb"},
+]
+googleapis-common-protos = []
+grpcio = []
+httplib2 = [
+    {file = "httplib2-0.22.0-py3-none-any.whl", hash = "sha256:14ae0a53c1ba8f3d37e9e27cf37eabb0fb9980f435ba405d546948b009dd64dc"},
+    {file = "httplib2-0.22.0.tar.gz", hash = "sha256:d7a10bc5ef5ab08322488bde8c726eeee5c8618723fdb399597ec58f3d82df81"},
+]
+idna = []
+oauthlib = []
+protobuf = [
+    {file = "protobuf-4.22.3-cp310-abi3-win32.whl", hash = "sha256:8b54f56d13ae4a3ec140076c9d937221f887c8f64954673d46f63751209e839a"},
+    {file = "protobuf-4.22.3-cp310-abi3-win_amd64.whl", hash = "sha256:7760730063329d42a9d4c4573b804289b738d4931e363ffbe684716b796bde51"},
+    {file = "protobuf-4.22.3-cp37-abi3-macosx_10_9_universal2.whl", hash = "sha256:d14fc1a41d1a1909998e8aff7e80d2a7ae14772c4a70e4bf7db8a36690b54425"},
+    {file = "protobuf-4.22.3-cp37-abi3-manylinux2014_aarch64.whl", hash = "sha256:70659847ee57a5262a65954538088a1d72dfc3e9882695cab9f0c54ffe71663b"},
+    {file = "protobuf-4.22.3-cp37-abi3-manylinux2014_x86_64.whl", hash = "sha256:13233ee2b9d3bd9a5f216c1fa2c321cd564b93d8f2e4f521a85b585447747997"},
+    {file = "protobuf-4.22.3-cp37-cp37m-win32.whl", hash = "sha256:ecae944c6c2ce50dda6bf76ef5496196aeb1b85acb95df5843cd812615ec4b61"},
+    {file = "protobuf-4.22.3-cp37-cp37m-win_amd64.whl", hash = "sha256:d4b66266965598ff4c291416be429cef7989d8fae88b55b62095a2331511b3fa"},
+    {file = "protobuf-4.22.3-cp38-cp38-win32.whl", hash = "sha256:f08aa300b67f1c012100d8eb62d47129e53d1150f4469fd78a29fa3cb68c66f2"},
+    {file = "protobuf-4.22.3-cp38-cp38-win_amd64.whl", hash = "sha256:f2f4710543abec186aee332d6852ef5ae7ce2e9e807a3da570f36de5a732d88e"},
+    {file = "protobuf-4.22.3-cp39-cp39-win32.whl", hash = "sha256:7cf56e31907c532e460bb62010a513408e6cdf5b03fb2611e4b67ed398ad046d"},
+    {file = "protobuf-4.22.3-cp39-cp39-win_amd64.whl", hash = "sha256:e0e630d8e6a79f48c557cd1835865b593d0547dce221c66ed1b827de59c66c97"},
+    {file = "protobuf-4.22.3-py3-none-any.whl", hash = "sha256:52f0a78141078077cfe15fe333ac3e3a077420b9a3f5d1bf9b5fe9d286b4d881"},
+    {file = "protobuf-4.22.3.tar.gz", hash = "sha256:23452f2fdea754a8251d0fc88c0317735ae47217e0d27bf330a30eec2848811a"},
+]
+pyasn1 = []
+pyasn1-modules = [
+    {file = "pyasn1_modules-0.3.0-py2.py3-none-any.whl", hash = "sha256:d3ccd6ed470d9ffbc716be08bd90efbd44d0734bc9303818f7336070984a162d"},
+    {file = "pyasn1_modules-0.3.0.tar.gz", hash = "sha256:5bd01446b736eb9d31512a30d46c1ac3395d676c6f3cafa4c03eb54b9925631c"},
+]
+pyparsing = []
+pytz = []
+requests = [
+    {file = "requests-2.28.2-py3-none-any.whl", hash = "sha256:64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa"},
+    {file = "requests-2.28.2.tar.gz", hash = "sha256:98b1b2782e3c6c4904938b84c0eb932721069dfdb9134313beff7c83c2df24bf"},
+]
+requests-oauthlib = []
+rsa = [
+    {file = "rsa-4.9-py3-none-any.whl", hash = "sha256:90260d9058e514786967344d0ef75fa8727eed8a7d2e43ce9f4bcf1b536174f7"},
+    {file = "rsa-4.9.tar.gz", hash = "sha256:e38464a49c6c85d7f1351b0126661487a7e0a14a50f1675ec50eb34d4f20ef21"},
+]
+six = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+    {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+sqlparse = []
+uritemplate = []
+urllib3 = [
+    {file = "urllib3-1.26.15-py2.py3-none-any.whl", hash = "sha256:aa751d169e23c7479ce47a0cb0da579e3ede798f994f5816a74e4f4500dcea42"},
+    {file = "urllib3-1.26.15.tar.gz", hash = "sha256:8a388717b9476f934a21484e8c8e61875ab60644d29b9b39e11e4b9dc1c6b305"},
+]
+xds-protos = []
